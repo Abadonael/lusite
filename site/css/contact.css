@@ -1,0 +1,25 @@
+
+.contact-section {
+  background: #f3f4f6;
+  padding: var(--space-xl) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--surface);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
