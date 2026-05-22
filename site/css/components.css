@@ -193,8 +193,12 @@
     padding-bottom: var(--space-xl);
   }
 
+  .hero-content {
+    padding-inline: clamp(8px, 4vw, 32px);
+  }
+  
   .hero-content h1 {
-    font-size: clamp(44px, 15vw, 72px);
+    font-size: clamp(44px, 12vw, 104px);
   }
 
   .quick-contacts {
