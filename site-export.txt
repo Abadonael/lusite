@@ -1,0 +1,339 @@
+
+
+===== C:\Nik\LuSite\site\articles.html =====
+
+
+
+===== C:\Nik\LuSite\site\articles\article1.html =====
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fox Article 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="article1.html">Fox Article 1</a>
+        <a href="article2.html">Fox Article 2</a>
+        <a href="article3.html">Fox Article 3</a>
+        <a href="article4.html">Fox Article 4</a>
+        <a href="article5.html">Fox Article 5</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Fox Article 1</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+    </p>
+
+</div>
+
+</body>
+</html>
+
+
+===== C:\Nik\LuSite\site\articles\article2.html =====
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fox Article 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="article1.html">Fox Article 1</a>
+        <a href="article2.html">Fox Article 2</a>
+        <a href="article3.html">Fox Article 3</a>
+        <a href="article4.html">Fox Article 4</a>
+        <a href="article5.html">Fox Article 5</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Fox Article 2</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+    </p>
+
+</div>
+
+</body>
+</html>
+
+
+===== C:\Nik\LuSite\site\articles\article3.html =====
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fox Article 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="article1.html">Fox Article 1</a>
+        <a href="article2.html">Fox Article 2</a>
+        <a href="article3.html">Fox Article 3</a>
+        <a href="article4.html">Fox Article 4</a>
+        <a href="article5.html">Fox Article 5</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Fox Article 3</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+    </p>
+
+</div>
+
+</body>
+</html>
+
+
+===== C:\Nik\LuSite\site\articles\article4.html =====
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fox Article 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="article1.html">Fox Article 1</a>
+        <a href="article2.html">Fox Article 2</a>
+        <a href="article3.html">Fox Article 3</a>
+        <a href="article4.html">Fox Article 4</a>
+        <a href="article5.html">Fox Article 5</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Fox Article 4</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+    </p>
+
+</div>
+
+</body>
+</html>
+
+
+===== C:\Nik\LuSite\site\articles\article5.html =====
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fox Article 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="article1.html">Fox Article 1</a>
+        <a href="article2.html">Fox Article 2</a>
+        <a href="article3.html">Fox Article 3</a>
+        <a href="article4.html">Fox Article 4</a>
+        <a href="article5.html">Fox Article 5</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Fox Article 5</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+    </p>
+
+</div>
+
+</body>
+</html>
+
+
+===== C:\Nik\LuSite\site\css\base.css =====
+
+
+
+===== C:\Nik\LuSite\site\css\components.css =====
+
+
+
+===== C:\Nik\LuSite\site\css\layout.css =====
+
+
+
+===== C:\Nik\LuSite\site\css\style.css =====
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #1f2937;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.hero {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 56px;
+}
+
+.hero p {
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+
+===== C:\Nik\LuSite\site\css\themes.css =====
+
+
+
+===== C:\Nik\LuSite\site\css\variables.css =====
+
+
+
+===== C:\Nik\LuSite\site\index.html =====
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fox site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="article1.html">Fox Article 1</a>
+        <a href="article2.html">Fox Article 2</a>
+        <a href="article3.html">Fox Article 3</a>
+        <a href="article4.html">Fox Article 4</a>
+        <a href="article5.html">Fox Article 5</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Fox site</h1>
+    <p>Fox Fox Fox</p>
+</section>
+
+<div class="container">
+
+    <h1>Welcome</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    </p>
+
+</div>
+
+</body>
+</html>

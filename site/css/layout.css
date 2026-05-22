@@ -1,0 +1,9 @@
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.text-column {
+  max-width: 620px;
+}
