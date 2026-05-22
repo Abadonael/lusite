@@ -1,0 +1,12 @@
+
+.profile-section {
+  padding: var(--space-xl) var(--space-md);
+}
+
+.profile-section h2 {
+  margin-top: var(--space-lg);
+}
+
+.approach {
+  margin-top: 32px;
+}
