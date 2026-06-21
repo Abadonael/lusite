@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<article class="article-page container">
+
+  <a class="back-link" href="{{ "/articles/" | relLangURL }}">
+     ← Articles
+  </a>
+
+  <h1>{{ .Title }}</h1>
+
+  <p class="article-date-large">{{ .Date.Format "January 2, 2006" }}</p>
+
+  <hr>
+
+  {{ with .Params.summary }}
+    <p class="article-lead">{{ . }}</p>
+  {{ end }}
+
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+
+</article>
+
+{{ end }}

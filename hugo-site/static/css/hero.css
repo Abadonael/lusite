@@ -1,12 +1,12 @@
 
 .hero {
-  padding: 120px 0 80px;
+  padding: 90px 0 40px;
   display: grid;
   grid-template-columns: 1fr 360px;
   gap: var(--space-xl);
   align-items: center;
 }
-  
+
 .hero-photo {
   order: 2;
   min-height: 260px;

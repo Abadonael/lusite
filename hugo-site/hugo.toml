@@ -1,0 +1,19 @@
+baseURL = "https://kuranova.synology.me/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 2
+    contentDir = "content/de"
+
+  [languages.ru]
+    languageName = "Русский"
+    weight = 3
+    contentDir = "content/ru"

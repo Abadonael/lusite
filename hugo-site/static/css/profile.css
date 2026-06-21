@@ -1,6 +1,5 @@
-
 .profile-section {
-  padding: var(--space-xl) var(--space-md);
+  padding: 32px var(--space-md) var(--space-xl);
 }
 
 .profile-section h2 {

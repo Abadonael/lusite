@@ -1,0 +1,17 @@
+<header class="site-header">
+  <nav class="nav container">
+    <div class="nav-left">
+      <a class="nav-link" href="{{ "/" | relLangURL }}">Home</a>
+      <a class="nav-link" href="{{ "/articles/" | relLangURL }}">Articles</a>
+    </div>
+
+    <details class="language-menu">
+      <summary>🌐 {{ .Site.Language.Lang | upper }}</summary>
+      <div class="language-dropdown">
+        {{ range .AllTranslations }}
+          <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+      </div>
+    </details>
+  </nav>
+</header>

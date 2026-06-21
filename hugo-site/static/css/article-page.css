@@ -5,14 +5,19 @@
 }
 
 .back-link {
-  display: inline-block;
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--muted);
   text-decoration: none;
-  margin-bottom: 36px;
+  font-size: 15px;
+
+  margin-bottom: 40px;
 }
 
 .back-link:hover {
-  text-decoration: underline;
+  color: var(--text);
 }
 
 .article-tag {
@@ -54,5 +59,15 @@
 
 .article-body p {
   font-size: 18px;
+  color: var(--text);
+}
+
+.article-page .back-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.article-page .back-link:hover {
   color: var(--text);
 }

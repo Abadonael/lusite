@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<section class="hero container">
+  <div class="hero-photo">
+    <img src="{{ .Params.photo | default "/images/doctor.jpg" }}" alt="{{ .Params.photoAlt | default "Doctor portrait" }}">
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">{{ .Params.eyebrow }}</p>
+    <h1>{{ .Params.name }}</h1>
+    <p class="specialty">{{ .Params.specialty }}</p>
+  </div>
+</section>
+
+<section class="profile-section container">
+  <div class="text-column">
+    {{ .Content }}
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title">{{ .Params.contactTitle }}</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>{{ .Params.addressTitle }}</h3>
+        <p>{{ .Params.address | safeHTML }}</p>
+
+        <h3>{{ .Params.phoneTitle }}</h3>
+        <p>{{ .Params.phone }}</p>
+
+        <h3>{{ .Params.emailTitle }}</h3>
+        <p>{{ .Params.email }}</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>{{ .Params.hoursTitle }}</h3>
+        {{ range .Params.hours }}
+          <p>{{ . }}</p>
+        {{ end }}
+        <hr>
+        <p>{{ .Params.appointmentNote }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
