@@ -1,6 +1,7 @@
 baseURL = "https://kuranova.synology.me/"
-defaultContentLanguage = "en"
+defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
+disableKinds = ["taxonomy", "term"]
 
 [languages]
   [languages.en]

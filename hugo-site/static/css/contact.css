@@ -1,6 +1,6 @@
 
 .contact-section {
-  background: #f3f4f6;
+  background: var(--section-bg);
   padding: var(--space-xl) 0;
 }
 
@@ -19,7 +19,14 @@
 
 .contact-card {
   background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.contact-card hr {
+  border: 0;
+  border-top: 1px solid var(--border);
 }

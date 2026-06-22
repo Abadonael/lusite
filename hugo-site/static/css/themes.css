@@ -2,3 +2,39 @@
   --bg: #111;
   --text: #eee;
 }
+
+:root {
+  color-scheme: light dark;
+}
+
+/* Browser/system dark mode */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --bg: #111111;
+    --text: #f2f2f2;
+    --muted: #a8a8a8;
+    --surface: #1a1a1a;
+    --border: #333333;
+    --accent: #7aa2ff;
+  }
+}
+
+/* Manual dark */
+html[data-theme="dark"] {
+  --bg: #111111;
+  --surface: #1a1a1a;
+  --text: #f2f2f2;
+  --muted: #a8a8a8;
+  --accent: #7aa2ff;
+  --border: #333333;
+}
+
+/* Manual light */
+html[data-theme="light"] {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --text: #111827;
+  --muted: #5f6673;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+}
