@@ -1,4 +1,4 @@
-baseURL = "https://kuranova.synology.me/"
+baseURL = "https://kuranova.pages.dev/"
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
 disableKinds = ["taxonomy", "term"]
