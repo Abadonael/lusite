@@ -159,8 +159,12 @@ deployment production. Полный реестр: [PRIVACY_AUDIT.md](PRIVACY_AUD
   Гарантированно чистый профиль, Network, HttpOnly/partitioned cookies,
   localStorage/sessionStorage/IndexedDB/Cache таблицы и NEL-отправка не проверены.
   Панель CF, DPA аккаунта, logs/retention/transfer и Gmail type/retention неизвестны.
-- Git diff --check и локальные ссылки документации проверяются перед отправкой
-  draft PR. Production-публикация не выполняется, нового deployment SHA нет.
+- Git diff --check и локальные ссылки документации проверены перед отправкой
+  [draft PR #3](https://github.com/Abadonael/lusite/pull/3), commit кода
+  f3fe6a29558a4e3235d60f22c3c05294554319dc. Проверка списка GitHub diff подтвердила
+  только 23 файла задачи, без медицинских статей и генерируемого output.
+  GitHub combined status: пустой список, CI/deployment этим не подтверждены.
+  Production-публикация не выполнялась, Cloudflare preview не проверен.
 
 Повторить локальные сборки (результаты не предназначены для deployment):
 
