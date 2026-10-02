@@ -1,9 +1,8 @@
 ---
 title: "Impressum"
 translationKey: "legal-impressum"
-draft: true
+url: "/impressum/"
 legal: true
-legalApproved: false
 build:
   list: never
 ---
@@ -21,5 +20,5 @@ E-Mail: [liudmila@kuranova.de](mailto:liudmila@kuranova.de)
 
 Ärztin. Fachgebiet: HNO / Hals-Nasen-Ohrenheilkunde.
 
-Akademischer Grad: Кандидат медицинских наук, Russland.  
-ВАК — Высшая аттестационная комиссия России.
+Akademischer Grad: Kandidatin der medizinischen Wissenschaften (Кандидат медицинских наук), Russland.  
+VAK — Высшая аттестационная комиссия России.

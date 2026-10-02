@@ -1,34 +1,24 @@
-{{/* Drafts are absent from ordinary builds. Never link to a missing legal page. */}}
-{{ $impressum := .Site.GetPage "/impressum" }}
-{{ $privacy := .Site.GetPage "/datenschutz" }}
 {{ $lang := .Site.Language.Lang }}
-{{ if not $impressum }}
-  {{ range hugo.Sites }}
-    {{ if eq .Language.Lang "de" }}{{ $impressum = .GetPage "/impressum" }}{{ end }}
-  {{ end }}
+{{ $impressum := false }}
+{{ range hugo.Sites }}
+  {{ if eq .Language.Lang "de" }}{{ $impressum = .GetPage "/impressum" }}{{ end }}
 {{ end }}
-{{ if not $privacy }}
-  {{ range hugo.Sites }}
-    {{ if eq .Language.Lang "de" }}{{ $privacy = .GetPage "/datenschutz" }}{{ end }}
-  {{ end }}
+{{ $privacy := .Site.GetPage "/privacy" }}
+{{ $label := "Legal information" }}
+{{ $privacyLabel := "Privacy" }}
+{{ if eq $lang "de" }}
+  {{ $privacy = .Site.GetPage "/datenschutz" }}
+  {{ $label = "Rechtliche Informationen" }}
+  {{ $privacyLabel = "Datenschutz" }}
+{{ else if eq $lang "ru" }}
+  {{ $label = "Юридическая информация" }}
+  {{ $privacyLabel = "Политика конфиденциальности" }}
 {{ end }}
 {{ if and $impressum $privacy }}
-  {{ $label := "Legal information" }}
-  {{ $impressumLabel := "Impressum (Legal notice)" }}
-  {{ $privacyLabel := "Privacy notice" }}
-  {{ if eq $lang "de" }}
-    {{ $label = "Rechtliche Informationen" }}
-    {{ $impressumLabel = "Impressum" }}
-    {{ $privacyLabel = "Datenschutzerklärung" }}
-  {{ else if eq $lang "ru" }}
-    {{ $label = "Юридическая информация" }}
-    {{ $impressumLabel = "Impressum — сведения об операторе" }}
-    {{ $privacyLabel = "Политика конфиденциальности" }}
-  {{ end }}
   <footer class="site-footer">
     <nav class="container legal-links" aria-label="{{ $label }}">
-      <a href="{{ $impressum.RelPermalink }}" hreflang="{{ $impressum.Language.Lang }}">{{ $impressumLabel }}{{ if ne $impressum.Language.Lang $lang }} (Deutsch){{ end }}</a>
-      <a href="{{ $privacy.RelPermalink }}" hreflang="{{ $privacy.Language.Lang }}">{{ $privacyLabel }}{{ if ne $privacy.Language.Lang $lang }} (Deutsch){{ end }}</a>
+      <a href="{{ $impressum.RelPermalink }}" hreflang="de">Impressum</a>
+      <a href="{{ $privacy.RelPermalink }}" hreflang="{{ $lang }}">{{ $privacyLabel }}</a>
     </nav>
   </footer>
 {{ end }}

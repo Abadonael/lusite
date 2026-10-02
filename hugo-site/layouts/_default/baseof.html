@@ -17,11 +17,11 @@
   <link rel="stylesheet" href="/css/article-page.css">
   <link rel="stylesheet" href="/css/themes.css">
   <link rel="stylesheet" href="/css/legal.css?v={{ readFile "static/css/legal.css" | sha256 }}">
-  {{ if and .Params.legal (not .Params.legalApproved) }}
-    {{ if ne hugo.Environment "legal-review" }}
-      {{ errorf "Unapproved legal page %s: use --environment legal-review only for local review" .File.Path }}
+  {{ if .Params.legal }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ range .AllTranslations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
     {{ end }}
-    <meta name="robots" content="noindex, nofollow">
   {{ end }}
 </head>
 

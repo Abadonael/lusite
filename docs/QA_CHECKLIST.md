@@ -209,3 +209,29 @@ node scripts/check-theme.cjs
   панели/экземпляры договоров, исполнение удаления из почты/копий/backups,
   DNSSEC независимо, реальный zoom 200%, deployment SHA и CF preview.
   Корректная 404 остаётся T06. Merge/production-публикация не выполняются.
+
+## Финальная редакция и публикация — 02.10.2026
+
+Текущие результаты и отложенные TODO: [LEGAL-AUDIT.md](LEGAL-AUDIT.md).
+Исторические записи выше описывают прежние draft-стадии, не текущий релиз.
+
+- Обычная production-сборка `.local/release-20261002`: успешно, 21 HTML.
+  Специальный environment и --buildDrafts не нужны. Устаревшие languageName — предупреждения.
+- Обновлённый scripts/check-legal.py: 4 public legal, canonical/hreflang,
+  все внутренние/resource/translation/footer ссылки, lang, реквизиты, отсутствие
+  старых дублей, пустого reviewNotice и служебной документации — успешно.
+- Удалённые публичные сведения и 5 одинаковых по смыслу разделов DE/EN/RU сверены.
+  Cloudflare Customer DPA, IONOS Datenschutz и BayLDA сохранены.
+- 16 состояний legal и 24 состояния прочих типов страниц в IAB, 360/1280 px,
+  обе темы: без overflow; footer доступен. Privacy RU → EN → DE проверен кликами.
+- check-theme.cjs: 10 сценариев успешно; JS/CSS не менялись этим этапом.
+- Production-проверка выполняется после merge; её нельзя заменить локальной сборкой.
+  Чистый Network/Storage, панели провайдеров, zoom 200% этим этапом не проверялись.
+
+Повторить:
+
+```powershell
+hugo --source hugo-site --destination C:\Nik\LuSite\.local\release-20261002 --noBuildLock --minify
+python scripts/check-legal.py --production .local/release-20261002
+node scripts/check-theme.cjs
+```
