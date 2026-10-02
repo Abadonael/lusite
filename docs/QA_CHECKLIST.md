@@ -175,6 +175,17 @@ python scripts/check-legal.py --production .local/production --review .local/rev
 node scripts/check-theme.cjs
 ```
 
+## Production — финальный релиз 02.10.2026
+
+PR #3 merged; main `3e2103a03cee0fd127e76802403888c68989f401`.
+Cloudflare Pages check именно этого commit завершён completed/success.
+Четыре legal URL, главная /ru/ и /ru/articles/adenoids/ вернули HTTP 200.
+Все четыре legal имеют нужные lang/canonical и содержат финальные тексты без
+пустого reviewNotice. Production IAB подтвердил mailto liudmila@kuranova.de,
+новый footer, отсутствие временных сведений главной, переход privacy RU → EN
+и переключение темы. Preview перенаправлялся на production; отдельная проверка
+его содержимого не засчитана. Непроведённые проверки перечислены выше.
+
 ## Продолжение юридической задачи — 2 октября 2026 года
 
 - Сохранены результаты и ограничения предыдущего ревью; текущие проверки

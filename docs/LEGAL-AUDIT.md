@@ -44,4 +44,17 @@ TODO не включены в публичные тексты и не блоки
 - Node: 10 сценариев темы прошли. В этой финальной задаче JS/CSS, главные и статьи
   не менялись. Неизменность остальных файлов сверяется с исходным снимком.
 - Чистый browser Network/Storage, панели Cloudflare/IONOS и zoom 200% этим этапом
-  не проверяются. Публичный deployment проверяется отдельно после merge PR #3.
+  не проверяются.
+
+## Публикация
+
+PR #3 слит в main: `3e2103a03cee0fd127e76802403888c68989f401`.
+Cloudflare Pages check этого SHA: completed / success, deployment
+`1bcd2463-5594-4aec-986c-ee9802130d7e`.
+Четыре публичных legal URL вернули HTTP 200 с нужным lang и canonical, без
+meta refresh; /ru/ и статья /ru/articles/adenoids/ также доступны с новым footer.
+В production IAB проверены тексты всех четырёх документов, отсутствие пустой
+заметки, единственный mailto liudmila@kuranova.de, footer, переход privacy RU → EN
+и переключение темы. Старые временные сведения на главной отсутствуют.
+Preview перед merge перенаправлялся на production; его содержимое отдельно
+не подтверждено. После merge проверен именно kuranova.de.
