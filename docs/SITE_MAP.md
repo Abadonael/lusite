@@ -1,21 +1,21 @@
 # Карта сайта
 
-Обновлено: 1 октября 2026 года. T01 выполнен 30 сентября 2026 года.
-Изменения юридической задачи ниже относятся к рабочим файлам и черновому PR; production пока прежний.
+Обновлено: 2 октября 2026 года. T01 выполнен 30 сентября 2026 года.
+Изменения юридической задачи ниже относятся к рабочим файлам и черновому PR; production проверен отдельно 02.10; изменения PR ещё не опубликованы.
 Подробные доказательства и ограничения: [PRIVACY_AUDIT.md](PRIVACY_AUDIT.md).
 Основание: исходники commit `ebb3df1ad7e8bebeea43bf8fcce83c711170fa74`,
 свежая сборка Hugo и публичные GET-запросы к production. Панель Cloudflare не проверена.
 Все пути исходников ниже — относительно корня Git-репозитория.
-Production: https://kuranova.pages.dev/; корень Hugo: `hugo-site/`.
+Production: https://kuranova.de/; корень Hugo: `hugo-site/`.
 
 ## Общие страницы
 
 | Страница | Реальный URL | Исходный файл | Шаблон / результат |
 |---|---|---|---|
-| Корень | `/` | Нет Markdown; Hugo генерирует `public/index.html` | HTML meta refresh на `https://kuranova.pages.dev/ru/`; HTTP 200 |
-| Главная RU | `/ru/` | `hugo-site/content/ru/_index.md` | `hugo-site/layouts/index.html`; имя/профиль в hero; временная биография и Contact Information удалены в PR |
-| Главная DE | `/de/` | `hugo-site/content/de/_index.md` | Тот же шаблон; имя/профиль в hero; временная биография и Contact Information удалены в PR |
-| Главная EN | `/en/` | `hugo-site/content/en/_index.md` | Тот же шаблон |
+| Корень | `/` | Нет Markdown; Hugo генерирует `public/index.html` | Свежая сборка: meta refresh на `https://kuranova.de/ru/`; production 02.10 ещё использует старый домен в fallback |
+| Главная RU | `/ru/` | `hugo-site/content/ru/_index.md` | `hugo-site/layouts/index.html`; имя без Dr., наёмный статус и новый email в hero; временная биография и Contact Information удалены в PR |
+| Главная DE | `/de/` | `hugo-site/content/de/_index.md` | Тот же шаблон; имя без Dr., наёмный статус и новый email в hero; временная биография и Contact Information удалены в PR |
+| Главная EN | `/en/` | `hugo-site/content/en/_index.md` | Тот же шаблон; имя без Dr., наёмный статус и новый email |
 | Список RU | `/ru/articles/` | `hugo-site/content/ru/articles/_index.md` | `hugo-site/layouts/articles/list.html` |
 | Список DE | `/de/articles/` | `hugo-site/content/de/articles/_index.md` | Тот же шаблон |
 | Список EN | `/en/articles/` | `hugo-site/content/en/articles/_index.md` | Тот же шаблон |
@@ -84,7 +84,7 @@ Production: https://kuranova.pages.dev/; корень Hugo: `hugo-site/`.
 | Возврат со статьи | `hugo-site/layouts/articles/single.html` | Ссылка на список статей текущего языка, в том числе из темы |
 | Общий single | `hugo-site/layouts/_default/single.html` | Реализованы H1/.Content и локальная пометка черновика; используется текущая типографика |
 | Футер | `hugo-site/layouts/partials/footer.html`, `static/css/legal.css` | Две локализованные ссылки на всех содержательных страницах local review; DE fallback с Deutsch при отсутствии перевода. В обычной сборке до готовности страниц ссылки скрыты |
-| Контакты | Временный Contact Information удалён из index.html и трёх _index.md | Подтверждённые реквизиты/mailto только в юридических черновиках; формы пока нет (T10 TODO) |
+| Контакты | Временный Contact Information удалён из index.html и трёх _index.md | Единственный email liudmila@kuranova.de показан на главных и в legal; почта IONOS, 3 месяца после завершения переписки. Почтовый адрес только в legal; формы пока нет (T10 TODO) |
 
 В PR storage-исключения обработаны; первый клик учитывает системную тему.
 10 Node-сценариев проверяют эти случаи и отсутствие записи при загрузке.
@@ -94,7 +94,7 @@ Production пока использует старый JS; browser-проверк
 ## Сборка и публикация
 
 - Конфигурация: `hugo-site/hugo.toml`; других hugo/config TOML/YAML и `config/` нет.
-- baseURL: `https://kuranova.pages.dev/`; defaultContentLanguage: `ru`;
+- baseURL: `https://kuranova.de/`; defaultContentLanguage: `ru`;
   defaultContentLanguageInSubdir: `true`.
 - Контент: `content/ru`, `content/de`, `content/en`; веса языков EN=1, DE=2, RU=3.
 - Внешняя Hugo-тема и модули не настроены; используются локальные layouts/static.
@@ -121,3 +121,14 @@ Preview URL для проверки не предоставлен. CI/workflow/w
 
 Результат T02 и вопросы оператору: [TASKS.md](TASKS.md).
 Чек-лист последующих проверок: [QA_CHECKLIST.md](QA_CHECKLIST.md).
+
+## Уточнения 02.10.2026
+
+Локальный main содержит отдельный commit владельца 16ae439 с новым baseURL;
+GitHub main при чтении ещё ebb3df1. В PR включается текущая локальная конфигурация.
+Юридические пути и язык/translationKey сохранены; обновлены реквизиты, степень,
+Cloudflare и IONOS. Draft/approval guard остаётся включённым.
+Свежая сборка использует kuranova.de в redirect и sitemap/RSS.
+Production в браузере всё ещё показывает временный профиль/контакты; неизвестные
+и legal-пути дают HTTP 200 с redirect на прежний pages.dev. Deployment SHA неизвестен.
+Имя оператора и юридический контактный адрес не обозначают адрес приёма.

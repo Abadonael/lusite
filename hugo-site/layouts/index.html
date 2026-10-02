@@ -9,6 +9,9 @@
     <p class="eyebrow">{{ .Params.eyebrow }}</p>
     <h1>{{ .Params.name }}</h1>
     <p class="specialty">{{ .Params.specialty }}</p>
+    {{ with .Params.email }}
+    <p class="hero-email"><a href="mailto:{{ . }}">{{ . }}</a></p>
+    {{ end }}
   </div>
 </section>
 

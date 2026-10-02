@@ -47,6 +47,7 @@ for root, review in ((args.production, False), (args.review, True)):
         page = Page(html)
         relative = path.relative_to(root).as_posix()
         assert 'kuranova.synology.me' not in html, relative
+        assert 'kuranova.pages.dev' not in html, relative
         assert not any(text in html for text in bad_text), relative
         if relative == 'index.html':  # Hugo's root language redirect
             continue
@@ -57,9 +58,11 @@ for root, review in ((args.production, False), (args.review, True)):
         assert footer == (expected if review else []), (relative, footer)
         for link in page.links:
             url = urlsplit(link)
+            if url.scheme == 'mailto':
+                assert url.path == 'liudmila@kuranova.de', (relative, link)
             if url.scheme in ('mailto', 'tel') or not url.path:
                 continue
-            if url.netloc and url.hostname not in ('localhost', 'kuranova.pages.dev'):
+            if url.netloc and url.hostname not in ('localhost', '127.0.0.1', 'kuranova.de'):
                 continue
             dest = root / unquote(url.path.lstrip('/'))
             if url.path.endswith('/'):
@@ -67,7 +70,9 @@ for root, review in ((args.production, False), (args.review, True)):
             assert dest.is_file(), (relative, link)
     for lang in ('de', 'ru', 'en'):
         home = (root / lang / 'index.html').read_text(encoding='utf-8')
-        assert 'Kranzhornstrasse' not in home and 'lbkuranova@gmail.com' not in home
+        assert 'Kranzhornstrasse' not in home
+        assert 'mailto:liudmila@kuranova.de' in home
+        assert 'Dr.' not in home and 'ENT medical practice' not in home
         for slug in ('impressum', 'datenschutz'):
             path = root / lang / slug / 'index.html'
             assert path.is_file() == review, path
@@ -75,14 +80,27 @@ for root, review in ((args.production, False), (args.review, True)):
                 html = path.read_text(encoding='utf-8')
                 assert 'legal-review-note' in html and 'noindex' in html, path
                 for field in ('Liudmila Kuranova', 'Kranzhornstrasse 5a',
-                              '81825 München', 'mailto:lbkuranova@gmail.com'):
+                              '81825 München', 'mailto:liudmila@kuranova.de'):
                     assert field in html, (path, field)
                 for target_lang in ('de', 'ru', 'en'):
                     assert f'/{target_lang}/{slug}/' in html, (path, target_lang)
+                if slug == 'datenschutz':
+                    for field in ('IONOS', 'https://www.ionos.de/terms-gtc/avv/'):
+                        assert field in html, (path, field)
+                    retention = {'ru': '3 месяца после завершения',
+                                 'de': '3 Monate nach Abschluss',
+                                 'en': '3 months after the exchange'}
+                    assert retention[lang] in html, (path, 'retention')
+                else:
+                    assert 'Кандидат медицинских наук' in html and 'ВАК' in html, path
         listing = (root / lang / 'articles' / 'index.html').read_text(encoding='utf-8')
         assert 'legal-review-note' not in listing
     # Legal documents must never become medical articles or RSS entries.
     for path in root.rglob('*.xml'):
         xml = path.read_text(encoding='utf-8')
         assert '/impressum/' not in xml and '/datenschutz/' not in xml, path
+        assert 'kuranova.pages.dev' not in xml, path
+    if not review:
+        redirect = (root / 'index.html').read_text(encoding='utf-8')
+        assert 'https://kuranova.de/ru/' in redirect
     print(f'{root}: {len(files)} HTML; routes, content, lang, footer, assets and RSS OK')

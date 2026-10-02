@@ -16,15 +16,15 @@ Kranzhornstrasse 5a
 81825 München  
 Deutschland
 
-Email: [lbkuranova@gmail.com](mailto:lbkuranova@gmail.com)
+Email: [liudmila@kuranova.de](mailto:liudmila@kuranova.de)
 
 ## Visiting the website
 
-The website provides information pages without its own user accounts, registration form or user database. The inspected website files load images, CSS and JavaScript from the same host; no external fonts or embedded services were found in those files. This does not mean that visiting the website involves no personal data processing.
+The website https://kuranova.de/ provides information pages without user accounts, registration or forms. Images, CSS and JavaScript load from the same website; the inspected files contain no external fonts, embeds or analytics tools.
 
-Cloudflare Pages hosts the website. Delivery involves processing an IP address and HTTP request information, such as the requested address, time and browser information. The purpose is to deliver the pages. Article 6(1)(f) GDPR is being considered for necessary website delivery, with the legitimate interest of providing an available, functioning information resource. This assessment does not cover unresolved additional logging or analysis purposes.
+Cloudflare provides hosting. Delivery processes an IP address and HTTP request information, such as the requested URL and technical connection information. The purpose is an available, securely functioning information resource. Article 6(1)(f) GDPR is the basis for necessary delivery, with this legitimate interest.
 
-The contractual entity for this account, processing arrangements, logs actually retained, authorised access and retention periods have not yet been confirmed. Cloudflare's public terms do not replace that verification.
+Under its [privacy policy](https://www.cloudflare.com/privacypolicy/), Cloudflare, Inc. processes Customer Logs and content in transit on customers' behalf; it acts as a controller for other operations described there. Section 11 bases retention on necessity for the stated purposes and legal obligations, rather than a single fixed period for all Pages logs. The [DPA](https://www.cloudflare.com/cloudflare-customer-dpa/) uses necessity for contract performance and contract termination as criteria for processing on behalf of customers; the [self-service terms](https://www.cloudflare.com/terms/) incorporate it under their specified conditions. The operator does not maintain her own visitor database. Additional account services and the applicable agreement still need checking before release.
 
 ## Technical network reports
 
@@ -42,15 +42,19 @@ The exception in section 25(2), number 2 TDDDG is used for the explicitly reques
 
 ## Email contact
 
-When you write to the published Gmail address, your sender address, name if supplied, message content and associated technical information are processed to handle your enquiry. The doctor herself reads the messages. Google receives these data as the email service provider. A `mailto:` link opens your configured email application; the link itself does not send a message.
+The website's only electronic contact is [liudmila@kuranova.de](mailto:liudmila@kuranova.de). A sender address, name if supplied, message, submitted attachments and email metadata are processed to answer enquiries. The doctor herself reads the messages. IONOS hosts the mailbox and stores the messages, providing the email service as a processor under the [IONOS processing agreement](https://www.ionos.de/terms-gtc/avv/). A `mailto:` link opens an email application and does not itself send a message.
 
-For general enquiries, Article 6(1)(f) GDPR may apply, with the legitimate interest of answering messages; Article 6(1)(b) GDPR may apply to enquiries actually related to a contract. The account type, applicable Google contractual entity and role, possible additional technical access, deletion procedures and retention periods must be confirmed before publication. A Google Workspace contract has not been established. The [Google privacy policy](https://policies.google.com/privacy?hl=de) is an additional provider source.
+General enquiries are processed under Article 6(1)(f) GDPR, with the legitimate interest of answering messages. Article 6(1)(b) GDPR applies to actual contract-related enquiries where its conditions are met.
 
-The website has no form for uploading medical records or health data. An email link does not establish consent to health data processing. Medical communication requires a separate assessment under Article 9 GDPR and a suitable secure channel.
+General correspondence is deleted **3 months after the exchange relating to the enquiry has ended**. This period is set by the operator for messages, rather than Cloudflare logs or IONOS operational data. Documents subject to statutory retention are stored separately to the extent necessary and for the applicable mandatory period. Implementation in the mailbox, trash, local copies and provider backups must be checked before release; the provider backup period has not yet been established.
+
+Please do not send diagnoses, medical reports or other health data to this general email address. Medical communication requires a separate basis under Article 9 GDPR and an appropriate secure channel. The website does not offer medical document uploads; an email link does not establish consent to processing health data.
 
 ## Recipients and international transfers
 
-Cloudflare and Google may process data outside the European Economic Area. The public [Cloudflare DPA](https://www.cloudflare.com/cloudflare-customer-dpa/) describes processing arrangements and transfer mechanisms; its applicability to this account has not yet been established. The recipients, countries and safeguards actually applicable to this website, and access to evidence of those safeguards, must be added before publication. Processing exclusively in Germany is not claimed.
+Hosting recipients are Cloudflare and the subprocessors applicable to the service in the [Cloudflare list](https://www.cloudflare.com/gdpr/subprocessors/cloudflare-services/); email recipients are IONOS and the applicable subprocessors under its agreement. A provider's product catalogue does not mean the website uses all those products.
+
+Cloudflare operates globally; processing outside the EEA, including the USA, is possible. Section 6 of the [Cloudflare DPA](https://www.cloudflare.com/cloudflare-customer-dpa/) describes the EU–US Data Privacy Framework for transfers covered by it and EU standard contractual clauses for relevant other transfers. The safeguards can be viewed through that link. Section 4.3 of the IONOS agreement provides for processing in the EU/EEA and compliance with Chapter V GDPR where a third-country transfer is necessary. Regions, additional access and subprocessors of the selected email service still need checking. Processing exclusively in Germany is not promised.
 
 ## Your rights
 

@@ -158,7 +158,7 @@ deployment production. Полный реестр: [PRIVACY_AUDIT.md](PRIVACY_AUD
 - Production: 10 свежих HTTP GET и DOM/тема/переход RU→DE проверены.
   Гарантированно чистый профиль, Network, HttpOnly/partitioned cookies,
   localStorage/sessionStorage/IndexedDB/Cache таблицы и NEL-отправка не проверены.
-  Панель CF, DPA аккаунта, logs/retention/transfer и Gmail type/retention неизвестны.
+  Панель CF, DPA аккаунта, logs/retention/transfer и прежнего почтового аккаунта type/retention неизвестны.
 - Git diff --check и локальные ссылки документации проверены перед отправкой
   [draft PR #3](https://github.com/Abadonael/lusite/pull/3), commit кода
   f3fe6a29558a4e3235d60f22c3c05294554319dc. Проверка списка GitHub diff подтвердила
@@ -174,3 +174,38 @@ hugo --source hugo-site --environment legal-review --buildDrafts --baseURL http:
 python scripts/check-legal.py --production .local/production --review .local/review
 node scripts/check-theme.cjs
 ```
+
+## Продолжение юридической задачи — 2 октября 2026 года
+
+- Сохранены результаты и ограничения предыдущего ревью; текущие проверки
+  относятся к обновлённым рабочим файлам того же draft PR #3.
+- Обычная Hugo-сборка: 17 HTML. Локальная legal-review: 23 HTML. Успешно;
+  существующие предупреждения languageName/.Language.LanguageName остаются.
+- check-legal.py: новый домен в root redirect/XML, новый mailto на всех главных
+  и юридических страницах, только один email, IONOS, 3 месяца после завершения
+  переписки во всех языках, исходная степень/ВАК, guard/noindex, footer,
+  translation/internal/resource ссылки и отсутствие legal в RSS/списках проверены.
+  Временный профиль/контакты/часы и неподтверждённый Dr. отсутствуют в сборке.
+- check-theme.cjs: все 10 сценариев прошли. JS темы в этом продолжении не менялся.
+- Повторная проверка guard: обычный --buildDrafts ожидаемо завершился ошибкой
+  Unapproved legal page; это успешная проверка блокировки, не успешная сборка.
+- Относительные Markdown-ссылки документации и git diff --check прошли.
+- Браузер: три главные и все шесть legal-страниц, каждая в обеих темах на
+  360×800 и 1280×900. Все mailto ведут на liudmila@kuranova.de, по две legal-ссылки
+  в local review, горизонтального переполнения нет. На mobile clientWidth и
+  scrollWidth равны 345 px. Скриншоты EN privacy/mobile и RU home/desktop просмотрены.
+  Новый email достигается Shift+Tab от footer, outline solid 2px видим.
+  Ошибок/warnings в доступном срезе console не обнаружено; viewport сброшен.
+- Семь свежих production GET к kuranova.de: HTTP 200, Server cloudflare,
+  Set-Cookie в срезе нет, NEL/Report-To присутствуют. Legal/неизвестный путь —
+  root redirect на прежний домен. Браузер production ещё показывает старый
+  временный профиль и контактный блок: PR не считается опубликованным.
+- Официальные CF Privacy/Terms/DPA/NEL и IONOS AVV перечитаны;
+  обработка/критерии/гарантии записаны в PRIVACY_AUDIT. Почтовый провайдер,
+  место хранения у IONOS и отсчёт срока подтверждены владельцем.
+- Git diff для исходников статей пуст. AGENTS.md/README.md остаются локальными
+  документами вне PR; в AGENTS только актуализирован production-домен.
+- Не проверены: чистый browser Network/Application, NEL-отправка/отключение,
+  панели/экземпляры договоров, исполнение удаления из почты/копий/backups,
+  DNSSEC независимо, реальный zoom 200%, deployment SHA и CF preview.
+  Корректная 404 остаётся T06. Merge/production-публикация не выполняются.

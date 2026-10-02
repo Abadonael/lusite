@@ -16,15 +16,15 @@ Kranzhornstrasse 5a
 81825 München  
 Deutschland
 
-E-Mail: [lbkuranova@gmail.com](mailto:lbkuranova@gmail.com)
+E-Mail: [liudmila@kuranova.de](mailto:liudmila@kuranova.de)
 
 ## Aufruf der Website
 
-Die Website liefert Informationsseiten ohne eigenes Benutzerkonto, Registrierungsformular oder Nutzerdatenbank aus. Die geprüften Website-Dateien laden Bilder, CSS und JavaScript vom selben Host; externe Schriftarten und eingebettete Dienste wurden darin nicht gefunden. Das bedeutet nicht, dass beim Besuch keine personenbezogenen Daten verarbeitet werden.
+Die Website https://kuranova.de/ bietet Informationsseiten ohne Benutzerkonten, Registrierung oder Formulare. Bilder, CSS und JavaScript werden von derselben Website geladen; in den geprüften Dateien gibt es keine externen Schriftarten, Einbettungen oder Analysewerkzeuge.
 
-Cloudflare Pages stellt die Website bereit. Bei der Übertragung werden insbesondere IP-Adresse und HTTP-Anfragedaten verarbeitet, etwa angeforderte Adresse, Zeitpunkt und Browserinformationen. Zweck ist die Auslieferung der Seiten. Für die notwendige Bereitstellung wird Art. 6 Abs. 1 lit. f DSGVO geprüft; das berechtigte Interesse ist ein erreichbares, funktionierendes Informationsangebot. Diese Bewertung deckt keine ungeklärten zusätzlichen Protokollierungs- oder Analysezwecke ab.
+Cloudflare stellt das Hosting bereit. Bei der Auslieferung werden die IP-Adresse und HTTP-Anfragedaten verarbeitet, etwa die angeforderte URL und technische Verbindungsinformationen. Zweck ist ein verfügbares, sicher funktionierendes Informationsangebot. Rechtsgrundlage für die notwendige Bereitstellung ist Art. 6 Abs. 1 lit. f DSGVO mit diesem berechtigten Interesse.
 
-Die Vertragspartei des konkreten Accounts, Auftragsverarbeitung, tatsächlich gespeicherte Protokolle, Zugriffsberechtigte und deren Aufbewahrungsfristen sind noch nicht bestätigt. Die öffentlich verfügbaren Bedingungen von Cloudflare ersetzen diese Klärung nicht.
+Nach der [Cloudflare-Datenschutzerklärung](https://www.cloudflare.com/privacypolicy/) verarbeitet Cloudflare, Inc. Customer Logs und durchgeleitete Inhalte im Auftrag; bei anderen dort beschriebenen Vorgängen ist Cloudflare selbst Verantwortlicher. Abschnitt 11 nennt als Speicherkriterien die Erforderlichkeit für die angegebenen Zwecke und rechtliche Pflichten, keine einheitliche feste Frist für alle Pages-Protokolle. Der [DPA](https://www.cloudflare.com/cloudflare-customer-dpa/) nennt für die Auftragsverarbeitung die Erforderlichkeit zur Vertragserfüllung und das Vertragsende; die [Self-Service-Bedingungen](https://www.cloudflare.com/terms/) beziehen den DPA unter den dort genannten Voraussetzungen ein. Die Betreiberin führt keine eigene Besucherdatenbank. Zusätzliche Account-Dienste und das geltende Vertragswerk sind vor Freigabe noch abzugleichen.
 
 ## Technische Netzwerkberichte
 
@@ -42,15 +42,19 @@ Für die ausdrücklich gewünschte dauerhafte Darstellungseinstellung wird die A
 
 ## Kontakt per E-Mail
 
-Wenn Sie an die veröffentlichte Gmail-Adresse schreiben, werden Absenderadresse, gegebenenfalls Name, Nachrichteninhalt und technische Begleitdaten zur Bearbeitung Ihres Anliegens verarbeitet. Die Ärztin selbst liest die Nachrichten. Google ist dabei Empfänger als Anbieter des E-Mail-Dienstes. Ein Link mit `mailto:` öffnet das konfigurierte E-Mail-Programm; er sendet von sich aus keine Nachricht.
+Der einzige elektronische Kontakt der Website ist [liudmila@kuranova.de](mailto:liudmila@kuranova.de). Zur Beantwortung werden Absenderadresse, gegebenenfalls Name, Nachricht, mitgesendete Anhänge und E-Mail-Metadaten verarbeitet. Die Ärztin selbst liest die Nachrichten. Das Postfach und die Nachrichten werden bei IONOS gespeichert; IONOS erbringt den E-Mail-Dienst als Auftragsverarbeiter nach der [IONOS-AVV](https://www.ionos.de/terms-gtc/avv/). Ein `mailto:`-Link öffnet das E-Mail-Programm und sendet selbst keine Nachricht.
 
-Für allgemeine Anfragen kommt Art. 6 Abs. 1 lit. f DSGVO mit dem Interesse an der Beantwortung in Betracht; bei tatsächlich vertragsbezogenen Anfragen kann Art. 6 Abs. 1 lit. b DSGVO gelten. Account-Typ, zutreffende Google-Vertragspartei und Rolle, mögliche zusätzliche technische Zugriffe, Löschabläufe und Aufbewahrungsfristen müssen vor Veröffentlichung bestätigt werden. Ein Google-Workspace-Vertrag ist nicht nachgewiesen. Die [Google-Datenschutzerklärung](https://policies.google.com/privacy?hl=de) ist eine ergänzende Anbieterquelle.
+Allgemeine Anfragen werden nach Art. 6 Abs. 1 lit. f DSGVO verarbeitet: berechtigtes Interesse an der Beantwortung. Für tatsächlich vertragsbezogene Anfragen gilt Art. 6 Abs. 1 lit. b DSGVO, soweit dessen Voraussetzungen erfüllt sind.
 
-Die Website stellt kein Formular zum Hochladen von Befunden oder Gesundheitsdaten bereit. Ein E-Mail-Link begründet keine Einwilligung zur Verarbeitung von Gesundheitsdaten. Eine medizinische Kommunikation erfordert eine gesonderte Prüfung nach Art. 9 DSGVO und einen geeigneten sicheren Kanal.
+Allgemeine Korrespondenz wird **3 Monate nach Abschluss des jeweiligen Schriftwechsels** gelöscht. Dies ist die von der Betreiberin festgelegte Frist für Nachrichten, nicht für Cloudflare-Protokolle oder IONOS-Betriebsdaten. Gesetzlich aufzubewahrende Unterlagen werden getrennt im erforderlichen Umfang und für die jeweils vorgeschriebene Dauer aufbewahrt. Vor Freigabe ist die Umsetzung im Postfach, Papierkorb, lokalen Kopien und Anbieter-Backups zu prüfen; die Frist der Letzteren ist noch nicht festgestellt.
+
+Bitte senden Sie keine Diagnosen, Befunde oder sonstigen Gesundheitsdaten an diese allgemeine E-Mail-Adresse. Medizinische Kommunikation benötigt eine gesonderte Grundlage nach Art. 9 DSGVO und einen geeigneten sicheren Kanal. Die Website bietet keinen Upload medizinischer Unterlagen an; ein E-Mail-Link begründet keine Einwilligung in die Verarbeitung von Gesundheitsdaten.
 
 ## Empfänger und internationale Übermittlungen
 
-Cloudflare und Google können Daten auch außerhalb des Europäischen Wirtschaftsraums verarbeiten. Der öffentlich verfügbare [Cloudflare-DPA](https://www.cloudflare.com/cloudflare-customer-dpa/) beschreibt Auftragsverarbeitung und Übermittlungsmechanismen; dessen Anwendung auf diesen Account ist noch nicht nachgewiesen. Die für diese Website tatsächlich geltenden Empfänger, Länder und Garantien sowie der Zugang zu deren Nachweisen sind vor Veröffentlichung zu ergänzen. Eine ausschließliche Verarbeitung in Deutschland wird nicht behauptet.
+Empfänger beim Hosting sind Cloudflare und die für den Dienst eingesetzten Unterauftragsverarbeiter aus der [Cloudflare-Liste](https://www.cloudflare.com/gdpr/subprocessors/cloudflare-services/); beim E-Mail-Dienst IONOS und die nach seiner AVV eingesetzten Unterauftragsverarbeiter. Der Produktkatalog eines Anbieters bedeutet nicht, dass die Website alle Produkte verwendet.
+
+Cloudflare arbeitet weltweit; eine Verarbeitung außerhalb des EWR, auch in den USA, ist möglich. Abschnitt 6 des [Cloudflare-DPA](https://www.cloudflare.com/cloudflare-customer-dpa/) beschreibt das EU–US Data Privacy Framework für davon erfasste Übermittlungen sowie EU-Standardvertragsklauseln für entsprechende andere Übermittlungen. Die Garantien sind über den Link einsehbar. Die IONOS-AVV, Ziffer 4.3, sieht die Verarbeitung in EU/EWR sowie bei erforderlichen Drittlandübermittlungen die Einhaltung von Kapitel V DSGVO vor. Regionen, zusätzliche Zugriffe und Unterauftragsverarbeiter des gewählten E-Mail-Dienstes sind noch abzugleichen. Eine ausschließlich deutsche Verarbeitung wird nicht zugesichert.
 
 ## Ihre Rechte
 

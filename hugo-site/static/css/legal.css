@@ -11,6 +11,7 @@
 }
 
 .legal-links a,
+.hero-email a,
 .legal-page a {
   color: var(--accent);
   text-underline-offset: 0.2em;
@@ -18,6 +19,7 @@
 }
 
 .legal-links a:focus-visible,
+.hero-email a:focus-visible,
 .legal-page a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;

@@ -1,8 +1,9 @@
 ---
-title: "Dr. Liudmila Kuranova"
-eyebrow: "ENT medical practice"
-name: "Dr. Liudmila Kuranova"
-specialty: "ENT"
+title: "Liudmila Kuranova"
+eyebrow: "Medical information"
+name: "Liudmila Kuranova"
+specialty: "Employed physician"
+email: "liudmila@kuranova.de"
 photo: "/images/doctor.jpg"
-photoAlt: "Doctor portrait"
+photoAlt: "Portrait of Liudmila Kuranova"
 ---
