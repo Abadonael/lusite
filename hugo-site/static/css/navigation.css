@@ -56,3 +56,15 @@
   border-color: var(--accent);
 }
 
+@media (max-width: 600px) {
+  .nav {
+    width: 100%;
+    gap: 12px;
+    padding-inline: 12px;
+  }
+
+  .nav-link {
+    padding-inline: 12px;
+  }
+}
+

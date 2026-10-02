@@ -12,3 +12,6 @@ Desktop.ini
 
 # Node
 node_modules/
+
+# Local legal review builds and audit artifacts (never deploy)
+.local/

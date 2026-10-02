@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="article-page legal-page container">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.reviewNotice }}
+    {{ if strings.TrimSpace . }}
+      <p class="legal-review-note" role="note">{{ . }}</p>
+    {{ end }}
+  {{ end }}
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,24 @@
+{{ $lang := .Site.Language.Lang }}
+{{ $impressum := false }}
+{{ range hugo.Sites }}
+  {{ if eq .Language.Lang "de" }}{{ $impressum = .GetPage "/impressum" }}{{ end }}
+{{ end }}
+{{ $privacy := .Site.GetPage "/privacy" }}
+{{ $label := "Legal information" }}
+{{ $privacyLabel := "Privacy" }}
+{{ if eq $lang "de" }}
+  {{ $privacy = .Site.GetPage "/datenschutz" }}
+  {{ $label = "Rechtliche Informationen" }}
+  {{ $privacyLabel = "Datenschutz" }}
+{{ else if eq $lang "ru" }}
+  {{ $label = "Юридическая информация" }}
+  {{ $privacyLabel = "Политика конфиденциальности" }}
+{{ end }}
+{{ if and $impressum $privacy }}
+  <footer class="site-footer">
+    <nav class="container legal-links" aria-label="{{ $label }}">
+      <a href="{{ $impressum.RelPermalink }}" hreflang="de">Impressum</a>
+      <a href="{{ $privacy.RelPermalink }}" hreflang="{{ $lang }}">{{ $privacyLabel }}</a>
+    </nav>
+  </footer>
+{{ end }}

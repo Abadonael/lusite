@@ -1,0 +1,48 @@
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-md) 0;
+  color: var(--text);
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
+}
+
+.legal-links a,
+.hero-email a,
+.legal-page a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.legal-links a:focus-visible,
+.hero-email a:focus-visible,
+.legal-page a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.legal-page {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.legal-page h1 {
+  font-size: clamp(26px, 4vw, 42px);
+}
+
+.legal-page h1,
+.legal-page .article-body {
+  overflow-wrap: anywhere;
+}
+
+.legal-review-note {
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}

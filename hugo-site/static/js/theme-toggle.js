@@ -5,16 +5,16 @@
   function applyTheme(theme) {
     if (theme === "dark" || theme === "light") {
       html.setAttribute("data-theme", theme);
-      localStorage.setItem(STORAGE_KEY, theme);
     } else {
       html.removeAttribute("data-theme");
-      localStorage.removeItem(STORAGE_KEY);
     }
   }
 
-  const savedTheme = localStorage.getItem(STORAGE_KEY);
-  if (savedTheme) {
-    applyTheme(savedTheme);
+  // Read only the requested appearance preference; never write on page load.
+  try {
+    applyTheme(localStorage.getItem(STORAGE_KEY));
+  } catch (_) {
+    // Appearance controls still work when browser storage is unavailable.
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -22,12 +22,14 @@
     if (!button) return;
 
     button.addEventListener("click", function () {
-      const current = html.getAttribute("data-theme");
-
-      if (current === "dark") {
-        applyTheme("light");
-      } else {
-        applyTheme("dark");
+      const current = html.getAttribute("data-theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const next = current === "dark" ? "light" : "dark";
+      applyTheme(next);
+      try {
+        localStorage.setItem(STORAGE_KEY, next);
+      } catch (_) {
+        // The selected appearance remains usable for this page.
       }
     });
   });
